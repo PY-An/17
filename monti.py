@@ -1,3 +1,12 @@
+import random
+
+def select_door():
+    doors = ['A', 'B', 'C']
+    return random.choice(doors)
+
+def get_player_choice():
+    return input("Choose a door (A, B, or C), or type 'end' to exit the game: ").upper()
+
 def play_monty_hall(): # 소현
     """
     몬티 홀 게임을 실행합니다.
@@ -22,5 +31,4 @@ def play_monty_hall(): # 소현
     else:
         print(f"Sorry, the answer was behind door {answer}. Better luck next time!")
         return False
-
 
